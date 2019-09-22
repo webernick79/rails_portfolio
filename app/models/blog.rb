@@ -4,4 +4,7 @@ class Blog < ApplicationRecord
   friendly_id :title, use: :slugged
 
   validates_presence_of :title, :body
+
+  # relationship -> child of topic
+  belongs_to :topic
 end
