@@ -1,4 +1,6 @@
 class Portfolio < ApplicationRecord
+  has_many :technologies
+
   validates_presence_of :title, :body, :subtitle, :main_image, :thumb_image
 
   # database query using method named 'angular'
